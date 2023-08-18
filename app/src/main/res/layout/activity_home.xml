@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#595959">
+
+    <!-- Toolbar at the top -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/mainToolbar"
+        android:background="@color/color"
+        android:text="Weather App"
+        android:textSize="25sp" />
+
+    <!-- SearchView for city search -->
+    <SearchView
+        android:id="@+id/searchCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainToolbar"
+        android:queryHint="Search City"
+        android:layout_marginBottom="16dp"
+        android:iconifiedByDefault="false"
+        android:textColor="#000"
+        android:textColorHint="#888"
+        android:background="@android:drawable/edit_text"
+        android:elevation="2dp" />
+
+    <!-- ViewPager2 for swipable UI -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/searchCity"
+        android:layout_weight="1"
+        android:layout_above="@+id/btnAddFavorite"
+        android:layout_marginBottom="16dp" />
+
+    <!-- FloatingActionButton for adding favorites -->
+    <Button
+        android:id="@+id/btnAddFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnViewHistory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:text="Add to Favorites"
+        android:padding="8dp"
+        android:background="@drawable/round_button"
+        android:contentDescription="Add to Favorites" />
+
+    <Button
+        android:id="@+id/btnViewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnViewFavorites"
+        android:layout_centerHorizontal="true"
+        android:text="View History" />
+
+    <Button
+        android:id="@+id/btnViewFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="View Favorites" />
+
+
+
+</RelativeLayout>

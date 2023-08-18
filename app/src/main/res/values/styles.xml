@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Theme for HistoryActivity -->
+    <style name="Theme.HistoryActivity" parent="AppTheme">
+        <!-- Customize your HistoryActivity theme attributes if needed -->
+    </style>
+
+    <!-- Theme for JournalEntryActivity -->
+    <style name="Theme.JournalEntryActivity" parent="AppTheme">
+        <!-- Customize your JournalEntryActivity theme attributes if needed -->
+    </style>
+
+
+</resources>

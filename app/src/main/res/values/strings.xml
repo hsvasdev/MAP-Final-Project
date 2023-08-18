@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="temperature">Temperature: %1$s°C</string>
+    <string name="humidity">Humidity: %1$s%%</string>
+    <string name="condition">Condition: %1$s</string>
+    <string name="wind_speed">Wind Speed: %1$s m/s</string>
+    <string name="back_button">Back</string>
+
+    <string-array name="city_list">
+        <item>New York</item>
+        <item>Los Angeles</item>
+        <item>Chicago</item>
+            <!-- Add more cities as per your requirements -->
+    </string-array>
+
+
+
+</resources>
